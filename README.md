@@ -9,26 +9,39 @@ Gestión multithread para manejar múltiples conexiones simultáneamente.
 
 ## Estructura del Repositorio
 
-- **`tcpmpser.java`**: Código fuente del cliente de la calculadora remota TCP.
+- **`tcpmtser.java`**: Código fuente del cliente de la calculadora remota TCP.
 - **`tcpmtser.java`**: Código fuente del servidor multithread de la calculadora remota TCP.
 
 ## Instrucciones de Uso
 
-### Servidor
+### Servidor  (`tcpmtser.java`)
 
-Para ejecutar el servidor, utiliza el siguiente comando en la terminal:
+1. Compile el archivo `tcpmtser.java`.
+   
+```bash
+javac tcpmtser.java
+```
 
+2. Ejecute el servidor proporcionando el número de puerto como argumento.
+   
 ```bash
 java tcpmtser <puerto>
 ```
 
-### Cliente
+### Cliente (`tcpmtcli.java`)
 
-Para ejecutar el cliente, proporciona la dirección IP del servidor y el puerto como argumentos:
+1. Compile el archivo `tcpmtcli.java`.
+ 
+```bash
+javac tcpmtcli.java
+```
+
+2. Ejecute el cliente proporcionando la dirección IP del servidor y el número de puerto como argumentos.
 
 ```bash
 java tcpmtcli <ip_servidor> <puerto>
 ```
+
 #### Comandos del Cliente
 
 El cliente acepta operaciones aritméticas en el siguiente formato:
